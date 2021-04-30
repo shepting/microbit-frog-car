@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     RingbitCar.running_time(RingbitCar.Direction_run.forward, 5)
 })
 input.onButtonPressed(Button.AB, function () {
-    music.ringTone(262)
+    music.playTone(330, music.beat(BeatFraction.Double))
     RingbitCar.steering_angle(RingbitCar.Direction_turn.right, 360)
 })
 input.onButtonPressed(Button.B, function () {
