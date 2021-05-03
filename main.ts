@@ -23,7 +23,19 @@ input.onButtonPressed(Button.AB, function () {
 })
 radio.onReceivedString(function (receivedString) {
     music.playTone(262, music.beat(BeatFraction.Eighth))
-    basic.showString(receivedString)
+    basic.showString("")
+    if (receivedString == "D") {
+        RingbitCar.running_time(RingbitCar.Direction_run.forward, 1)
+    }
+    if (receivedString == "E") {
+        RingbitCar.running_time(RingbitCar.Direction_run.backward, 1)
+    }
+    if (receivedString == "F") {
+        RingbitCar.steering_angle(RingbitCar.Direction_turn.right, 90)
+    }
+    if (receivedString == "C") {
+        RingbitCar.steering_angle(RingbitCar.Direction_turn.left, 90)
+    }
 })
 input.onButtonPressed(Button.B, function () {
     led.plot(3, 3)
