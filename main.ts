@@ -18,7 +18,7 @@ input.onSound(DetectedSound.Loud, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
-    music.playTone(330, music.beat(BeatFraction.Double))
+    music.playTone(494, music.beat(BeatFraction.Double))
     RingbitCar.steering_angle(RingbitCar.Direction_turn.right, 360)
 })
 radio.onReceivedString(function (receivedString) {
